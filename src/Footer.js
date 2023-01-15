@@ -7,7 +7,7 @@ export default function Footer() {
         <a
           href="https://github.com/TetGar/react-netlify-github/tree/main/src"
           target="_blank"
-          rel="noopener"
+          rel="noreferrer"
         >
           Open-source code
         </a>
