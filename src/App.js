@@ -1,57 +1,49 @@
 import React from "react";
-import "./App.css";
+
+import SearchEngine from "./SearchEngine";
 
 export default function App() {
   return (
-    <div className="container   border">
-      <form className="">
-        <div className="row">
-          <div className="col-3">
-            <input
-              type="search"
-              placeholder="Type a city.."
-              className="form-control"
-              autoComplete="off"
-            />
-          </div>
-          <div className="col-2">
-            <input
-              type="submit"
-              value="Search"
-              className="btn btn-primary w-100"
-            />
-          </div>
-        </div>
-      </form>
-      <div className="overview">
+    <div className="weather-build">
+      <div className="review">
         <h1>London</h1>
         <ul>
-          <li>Last updated: </li>
-          <li>Sunny</li>
+          <li>Sunday 20:00</li>
+          <li>Clouds</li>
         </ul>
       </div>
       <div className="row">
-        <div className="col-3">
+        <div className="col">
           <div className="clearfix weather-temperature">
             <img
               src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
-              alt="Sunny"
+              alt=""
               className="float-left"
             />
-
-            <strong>10 </strong>
-            <span className="units">
-              <a href="/">°C</a> | <a href="/">°F</a>
-            </span>
+            <div className="float-left ">
+              <strong>20</strong>
+              <span className="units">
+                <a href="#" class="active">
+                  °C
+                </a>{" "}
+                |<a href="#">F</a>
+              </span>
+            </div>
           </div>
         </div>
-        <div className="col-6 ">
+        <div className="col-6">
           <ul>
-            <li>Humidity: %</li>
-            <li>Wind: km/h</li>
+            <li>Humidity:70 %</li>
+            <li>Wind:15 m/h</li>
           </ul>
         </div>
       </div>
+      <small>
+        <a href="https://github.com/TetGar/weather-app" target="_blank">
+          Open-source code
+        </a>{" "}
+        (" ") by Tetiana Garastej
+      </small>
     </div>
   );
 }
