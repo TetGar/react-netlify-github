@@ -5,13 +5,17 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.min.css";
 import SearchEngine from "./SearchEngine";
+import Footer from "./Footer";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <div class="container-weather m-5 shadow">
-      <SearchEngine />
-      <App />
+    <div className="container">
+      <div className="load-weather">
+        <SearchEngine />
+        <App />
+      </div>
+      <Footer />
     </div>
   </React.StrictMode>
 );

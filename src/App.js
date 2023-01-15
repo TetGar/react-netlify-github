@@ -21,12 +21,12 @@ export default function App() {
               className="float-left"
             />
             <div className="float-left ">
-              <strong>20</strong>
+              <strong>20 </strong>
               <span className="units">
                 <a href="#" class="active">
                   °C
                 </a>{" "}
-                |<a href="#">F</a>
+                |<a href="#"> F</a>
               </span>
             </div>
           </div>
@@ -38,12 +38,6 @@ export default function App() {
           </ul>
         </div>
       </div>
-      <small>
-        <a href="https://github.com/TetGar/weather-app" target="_blank">
-          Open-source code
-        </a>{" "}
-        (" ") by Tetiana Garastej
-      </small>
     </div>
   );
 }
