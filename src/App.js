@@ -21,10 +21,10 @@ export default function App() {
             <div className="float-left ">
               <strong>20 </strong>
               <span className="units">
-                <a href="#" class="active">
+                <a href="/" class="active">
                   °C
                 </a>{" "}
-                |<a href="#"> F</a>
+                |<a href="/"> F</a>
               </span>
             </div>
           </div>
